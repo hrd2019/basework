@@ -1,0 +1,54 @@
+desc = "dev config"
+runmode = 1 #1:debug 2:release
+concurnum = 5000
+
+[pgsql]
+hosts = ["192.168.1.222"]
+ports = [5432]
+user = "postgres"
+password = "psql"
+dbname = "postgres"
+
+[redis]
+hosts = ["redis://192.168.1.222:6379"]
+password = "xjwl"
+maxActive = 3000
+MaxIdle = 2000
+IdleTimeoutSec = 240
+db = 0
+
+[rabbitmq]
+url = "amqp://game:123456@192.168.1.222:5672/game"
+qgame = "gameTest"
+qgamefeed = "gameFeed"
+#user = "test"
+#password = "test"
+#ip = ["192.168.1.222"]
+#port = [5672]
+#vhost = ["test"]
+#quName = ["test.xx"]
+#rtKey = ["test.xx"]
+#exName = ["test.xx"]
+#exType = ["topic"]
+
+[log]
+logfile = "item.log"
+sqlog = "sql.log"
+
+[authkey]
+key = "widXNlcm5hb@#￥iOiLlvKD%￥uIkiLCJm&WxsX25*bWUiOiL"
+subject = "happy new year"
+privateKey = "./scripts/private_key.pem"
+publickey = "./scripts/public_key.pem"
+
+[fillter]
+array = ["/login/","/getToken/"]
+
+[es]
+user = "elastic"
+passwd = "123456"
+url = "http://192.168.0.222:9200"
+logfile = "./eslog.log"
+
+
+
