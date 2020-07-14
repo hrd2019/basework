@@ -16,8 +16,13 @@ type config struct {
 	Authkey   *AuthkeyConfig
 	Fillter   *FillterConfig
 	ES        *ESConfig
+	Web       *WebConfig
 	RunMode   int
 	Concurnum int
+}
+
+type WebConfig struct {
+	Ports []int64
 }
 
 type ESConfig struct {

@@ -50,5 +50,8 @@ passwd = "123456"
 url = "http://192.168.0.222:9200"
 logfile = "./eslog.log"
 
+[web]
+ports = [20001]
+
 
 
