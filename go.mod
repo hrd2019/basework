@@ -7,7 +7,7 @@ require (
 	github.com/boombuler/barcode v1.0.0
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/elastic/go-elasticsearch/v7 v7.7.0
-	github.com/gin-gonic/gin v1.6.2
+	github.com/gin-gonic/gin v1.7.4
 	github.com/go-sql-driver/mysql v1.5.0 // indirect
 	github.com/go-xorm/xorm v0.7.9
 	github.com/gomodule/redigo v1.8.1
